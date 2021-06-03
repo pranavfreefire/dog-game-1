@@ -12,7 +12,7 @@ function setup() {
   database = firebase.database();
   foodStock = database.ref("Food");
   foodStock.on("value", readStock);
-  foodStock.set(20);
+  
 
   dog = createSprite(250,350,10,60);
   dog.addImage(dogImg);
